@@ -2,21 +2,15 @@
 <?php
 
 $x = 155;
+$test = 0;
+$rand = -1;
 
 
-
-     $test = 0;
-
-     while ($test == 0)
+     while ( $rand != $x)
      {
         $rand = rand(0, 1000);
-       echo $rand;
-       echo ('<br>');
-       if ($rand == $x ) 
-        {
-           
-            $test = 1;
-    } 
-     }
+        $test ++;
+     } 
+     echo $test . ' fois '. $rand. '<br>';
 
 ?>
